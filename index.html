@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="sisloc.png" type="image/jpeg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problemas na NFS-e </title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Problemas identificados no Sisloc durante a emissão de NFS-e. </h1>
+
+    <div class="cards-container">
+
+        <!-- Problema 1 -->
+        <div class="card">
+            <h2>Problema 1</h2>
+            <p><span class="section-title">Problema:</span> Na data de competência informada, o cadastro referente à
+                inscrição não foi encontrado ou não está habilitado para emissão de NFS-e, dentre os municípios
+                conveniados ao Sistema Nacional da NFS-e. Por favor, informe outra data de competência.</p>
+            <p><span class="section-title">Solução Paliativa:</span> Foi orientado aos clientes a entrar em contato com
+                a
+                contabilidade e solicitar a liberação no ambiente nacional. Alguns clientes não precisaram realizar a
+                liberação para emissão da nota de homologação.</p>
+            <p><span class="section-title">Solicitação:</span> <a href="https://sisloc.zendesk.com/agent/tickets/429845"
+                    target="_blank">#429845</a></p>
+        </div>
+
+        <!-- Problema 2 -->
+        <div class="card">
+            <h2>Problema 2</h2>
+            <p><span class="section-title">Problema:</span> Ocorreu um erro de processamento ao tentar obter o link do
+                arquivo PDF da NF de serviço do município “Belo Horizonte” através do Benefix.</p>
+            <p><span class="section-title">Solução Paliativa:</span> Correção realizada através da solicitação de
+                atualização para release 25.10.59.5.</p>
+            <p><span class="section-title">Solicitação:</span> <a href="https://sisloc.zendesk.com/agent/tickets/431247"
+                    target="_blank">#431247</a></p>
+        </div>
+
+        <!-- Problema 3 -->
+        <div class="card">
+            <h2>Problema 3</h2>
+            <p><span class="section-title">Problema:</span> Código: E0116 — A IM deve ser informada para o emitente
+                prestador do serviço na DPS, conforme informações complementares registradas no CNC NFS-e do município
+                emissor informado.</p>
+            <p><span class="section-title">Solução Paliativa:</span> Foi incluído um campo no cadastro da empresa (aba
+                Tributação) chamado “Existem informações complementares registradas no CNC NFS-e”, que deve ser marcado
+                como “Sim”. Verificar se o número da IM está corretamente cadastrado no Sisloc.</p>
+            <p><span class="section-title">Solicitação:</span> <a href="https://sisloc.zendesk.com/agent/tickets/430014"
+                    target="_blank">#430014</a></p>
+        </div>
+
+        <!-- Problema 4 -->
+        <div class="card">
+            <h2>Problema 4</h2>
+            <p><span class="section-title">Problema:</span> Erro: “Campo ‘cd_listaservicosnac’ não encontrado”.</p>
+            <p><span class="section-title">Solução Paliativa:</span> Correção realizada através da atualização para
+                release 25.10.57.2.</p>
+            <p><span class="section-title">Solicitação:</span> <a href="https://sisloc.zendesk.com/agent/tickets/430533"
+                    target="_blank">#430533</a></p>
+        </div>
+
+        <!-- Problema 5 -->
+        <div class="card">
+            <h2>Problema 5</h2>
+            <p><span class="section-title">Problema:</span> E999 - Erro não catalogado.</p>
+            <p><span class="section-title">Solução Paliativa:</span> Foi orientado a reprocessar a nota fiscal, pois o
+                erro ocorre por instabilidade no emissor nacional.</p>
+            <p><span class="section-title">Solicitação:</span> <a href="https://sisloc.zendesk.com/agent/tickets/430030"
+                    target="_blank">#430030</a></p>
+        </div>
+
+        <!-- Problema 6 -->
+        <div class="card">
+            <h2>Problema 6</h2>
+            <p><span class="section-title">Problema:</span> Código: -1038 — Erro de conversão JSON. Falta do Código de
+                Tributação Nacional ISSQN (cTribNac).</p>
+            <p><span class="section-title">Solução Paliativa:</span> Não houve solução paliativa via Sisloc; problema
+                encaminhado para correção.</p>
+            <p><span class="section-title">Solicitação:</span> <a href="https://sisloc.zendesk.com/agent/tickets/429940"
+                    target="_blank">#429940</a></p>
+        </div>
+
+        <!-- Problema 7 -->
+        <div class="card">
+            <h2>Problema 7</h2>
+            <p><span class="section-title">Problema:</span> Código: E0314 — O código de tributação municipal informado
+                não existe ou não está administrado pelo município de incidência do ISSQN na data de competência
+                informada.</p>
+            <p><span class="section-title">Solução Paliativa:</span> O código foi inserido manualmente na nota fiscal.
+                Dentro do Sisloc, o campo correspondente é utilizado para outros tipos de NFS-e.</p>
+            <p><span class="section-title">Solicitação:</span> <a href="https://sisloc.zendesk.com/agent/tickets/430030"
+                    target="_blank">#430030</a></p>
+        </div>
+
+        <!-- Problema 8 -->
+        <div class="card">
+            <h2>Problema 8</h2>
+            <p><span class="section-title">Problema:</span> Código: E0718 — A assinatura deve ser feita com o
+                certificado
+                digital do emitente da DPS.</p>
+            <p><span class="section-title">Solução Paliativa:</span> Corrigir o certificado digital na série da NFS-e.
+            </p>
+            <p><span class="section-title">Solicitação:</span> <a href="https://sisloc.zendesk.com/agent/tickets/429940"
+                    target="_blank">#429940</a></p>
+        </div>
+
+        <!-- Problema Não Cronometrado 1 -->
+        <div class="card">
+            <h2>Problema Não Cronometrado 1</h2>
+            <p><span class="section-title">Problema:</span> Exigibilidade Suspensa por decisão judicial (Belo
+                Horizonte).
+                Após a mudança para o ambiente nacional, essa opção não está mais disponível no Sisloc, embora exista no
+                portal emissor nacional.</p>
+            <p><span class="section-title">Solução Paliativa:</span> Não houve solução paliativa. Encaminhado para a
+                equipe de Produto.</p>
+            <p><span class="section-title">Solicitação:</span> <a href="https://sisloc.zendesk.com/agent/tickets/431053"
+                    target="_blank">#431053</a></p>
+        </div>
+
+        <!-- Problema Não Cronometrado 2 -->
+        <div class="card">
+            <h2>Problema Não Cronometrado 2</h2>
+            <p><span class="section-title">Problema:</span> Não é permitido informar alíquota quando não há indicação de
+                retenção do ISSQN para o prestador de serviço ME/EPP, conforme regras do Simples Nacional.</p>
+            <p><span class="section-title">Solução Paliativa:</span> Foi necessário alterar manualmente a alíquota para
+                0. A correção definitiva será feita nos grupos de serviço.</p>
+            <p><span class="section-title">Solicitação:</span> <a href="https://sisloc.zendesk.com/agent/tickets/43003"
+                    target="_blank">#43003</a></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 - Dossiê Técnico NFS-e | Elaborado por Pedro Nunes e Aretuza</p>
+    </div>
+</body>
+
+</html>
